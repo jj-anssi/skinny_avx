@@ -17,7 +17,7 @@ depend: .depend
 	$(C) $(CFLAGS) -MM $^>>./.depend;
 
 clean:
-	$(RM) $(OBJS) $(OUTFILE) *~ 
+	$(RM) $(OBJS) $(OUTFILE) *~ .depend
 
 dist-clean: clean
 	$(RM) *~ .depend
